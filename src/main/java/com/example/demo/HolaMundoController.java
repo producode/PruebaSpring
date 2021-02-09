@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HolaMundoController {
 	
-	private ArrayList<Persona> listaDePersonas = new ArrayList();
+	private ArrayList<Persona> listaDePersonas = new ArrayList<Persona>();
 	
 	private static final String template = "Hola, %s";
 	private final AtomicLong contador = new AtomicLong();
@@ -28,4 +28,8 @@ public class HolaMundoController {
 		return nuevaPersona;
 	}
 	
+	@GetMapping("/persona/listar")
+	public ArrayList<Persona> listarPersonas() {
+		return listaDePersonas;
+	}
 }
