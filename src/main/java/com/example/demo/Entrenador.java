@@ -53,4 +53,8 @@ public class Entrenador {
     public ArrayList<Mascota> getMascotas() {
         return mascotas;
     }
+
+	public String getNombre() {
+		return Nombre;
+	}
 }

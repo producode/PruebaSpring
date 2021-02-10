@@ -19,7 +19,7 @@ public class Tests {
     public void Comer(){
         Mascota mascotaActual = entrenador.getMascotas().get(0);
         entrenador.Alimentar(mascotaActual);
-        Assert.assertEquals(entrenador.getMascotas().get(0).getFelicidad(),4);
+        Assert.assertEquals(entrenador.getMascotas().get(0).getFelicidad(),6);
     }
 
     @Test
